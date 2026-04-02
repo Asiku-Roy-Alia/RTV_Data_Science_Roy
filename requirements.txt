@@ -1,0 +1,51 @@
+# =============================================================================
+# RTV Field Image Classifier — Root Requirements
+# =============================================================================
+# Install everything needed for all four tasks:
+#
+#   pip install -r requirements.txt
+#
+# Python 3.10 or 3.11 recommended.
+# Python 3.12 works but some torch builds differ — see notes below.
+#
+# GPU (optional): if you have a CUDA-capable GPU, replace the torch / torchvision
+# lines with the CUDA-specific wheel.  CPU-only is fine for inference; training
+# will be slow on CPU but completes correctly.
+#
+#   CPU (default, works everywhere):
+#       pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+#
+#   CUDA 12.1:
+#       pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+#
+# After installing torch separately, run:
+#   pip install -r requirements.txt
+# =============================================================================
+
+# ── deep learning ─────────────────────────────────────────────────────────────
+# Do NOT install torch via this file if you need a specific CUDA build.
+# See the note above and install torch/torchvision first, then run this file.
+torch>=2.1.0
+torchvision>=0.16.0
+
+# ── data & ML ─────────────────────────────────────────────────────────────────
+numpy>=1.24.0
+Pillow>=10.0.0
+scikit-learn>=1.3.0
+
+# ── visualisation (Task 2 evaluation) ────────────────────────────────────────
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# ── API serving (Task 3) ──────────────────────────────────────────────────────
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+python-multipart>=0.0.9
+pydantic>=2.5.0
+
+# ── testing ───────────────────────────────────────────────────────────────────
+pytest>=8.0.0
+httpx>=0.27.0
+
+# ── experiment tracking  ────────────────
+# wandb>=0.17.0

@@ -1,0 +1,13 @@
+# RTV Field Image Classifier — API dependencies
+# Pin versions for reproducible Docker builds.
+
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+python-multipart==0.0.9    # required for UploadFile / form data
+pydantic==2.7.4
+
+torch==2.3.0
+torchvision==0.18.0
+
+Pillow==10.3.0
+numpy==1.26.4
