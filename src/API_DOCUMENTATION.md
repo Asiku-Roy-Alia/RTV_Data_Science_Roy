@@ -190,7 +190,6 @@ result = asyncio.run(classify("compost_photo.jpg"))
 pip install pytest httpx
 pytest test_api.py -v
 
-# Expected output: 18 passed
 ```
 
 The test suite covers:

@@ -1,7 +1,7 @@
 # RTV Field Image Classifier
 
 **Candidate:** Roy Alia Asiku  
-**Assessment:** Data Scientist Technical Assessment — Raising The Village  
+**Assessment:** Data Scientist Technical Assessment | Raising The Village  
 **Date:** 2 April 2026  
 **Repository:** [github.com/AsikuRoy-Alia/RTV_Data_Science_Roy](https://github.com/AsikuRoy-Alia/RTV_Data_Science_Roy)
 
@@ -85,7 +85,7 @@ pip install -r requirements.txt
 ```bash
 cd src
 python dataset.py ../../data
-# Outputs: analysis_report.json  (all scan stats)
+# Outputs: analysis_report.json  
 # Logs:    class distribution, imbalance ratio, PII flags, split sizes
 ```
 
@@ -188,7 +188,7 @@ docker run -p 8000:8000 \
 | Test weighted F1    | **0.6854** |
 | Test macro F1       | 0.6156 |
 | Best epoch          | 11 / 15 |
-| Training epochs run | 15 (of planned 30 — laptop constraint) |
+| Training epochs run | 15 (of planned 30) |
 
 **Per-class highlights:**
 
@@ -272,16 +272,11 @@ containers behind a load balancer, not multiple workers per process.
 
 | Task | Time |
 |------|------|
-| Task 1: Data analysis & pipeline | ~1.5 hours |
-| Task 2: Model training & evaluation | ~2.5 hours (includes 15-epoch training run) |
+| Task 1: Data analysis & pipeline | ~0.5 hours |
+| Task 2: Model training & evaluation | ~1.5 hours  |
 | Task 3: API implementation & tests | ~1 hour |
 | Task 4: Dockerfile & documentation | ~0.5 hours |
-| **Total** | **~5.5 hours** |
-
-> Note: ~2 hours of the assessment window were lost to a work commitment. The
-> 15-epoch training limit (vs planned 30) was a deliberate time trade-off; the
-> model had not yet triggered early stopping and would benefit from continued
-> training — see Task 2 report for details.
+| **Total** | **~3.5 hours** |
 
 ---
 
@@ -320,17 +315,17 @@ containers behind a load balancer, not multiple workers per process.
 
 ## Further Improvements
 
-- **Run to 30 epochs** — model not yet converged at epoch 15; early stopping
+- **Run to 30 epochs**: Model not yet converged at epoch 15; early stopping
   had not triggered. Expected val F1 gain: ~0.03–0.05.
-- **Merge or relabel organic / liquid-organic** — 19 of the model's errors
+- **Merge or relabel organic / liquid-organic**: 19 of the model's errors
   are the near-symmetric organic↔liquid-organic confusion. These classes are
   visually almost indistinguishable in field photos.
-- **Collect more guinea-pig-shelter images** — 16 images is below the
+- **Collect more guinea-pig-shelter images**: 16 images is below the
   practical minimum for supervised learning. 50 clean images would allow
   meaningful evaluation.
-- **Clean guinea-pig-shelter labels** — remove the black image, cartoons, and
+- **Clean guinea-pig-shelter labels**: Remove the black image, cartoons, and
   mislabelled subjects before the next training run.
-- **Test-time augmentation (TTA)** — average predictions over 5–10 augmented
+- **Test-time augmentation (TTA)**: Average predictions over 5–10 augmented
   views at inference; free accuracy improvement with no retraining.
-- **MixUp / CutMix** — interpolation-based augmentation; particularly
+- **MixUp / CutMix**: Interpolation-based augmentation; particularly
   effective for the organic/liquid-organic boundary.
