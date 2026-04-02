@@ -1,0 +1,144 @@
+{
+  "history": [
+    {
+      "train/loss": 1.861138624303481,
+      "train/weighted_f1": 0.06438162154370146,
+      "epoch": 1,
+      "val/loss": 2.2377168089965656,
+      "val/weighted_f1": 0.06863296458008862,
+      "val/macro_f1": 0.06413599459842234
+    },
+    {
+      "train/loss": 1.4767718730253332,
+      "train/weighted_f1": 0.1547548701965048,
+      "epoch": 2,
+      "val/loss": 2.08263628730357,
+      "val/weighted_f1": 0.20173079665879198,
+      "val/macro_f1": 0.18415500484452568
+    },
+    {
+      "train/loss": 1.3502176711138556,
+      "train/weighted_f1": 0.3446782040337762,
+      "epoch": 3,
+      "val/loss": 1.9000705239551314,
+      "val/weighted_f1": 0.3728305428965516,
+      "val/macro_f1": 0.3401427386593554
+    },
+    {
+      "train/loss": 1.2358086081112132,
+      "train/weighted_f1": 0.3994995713948502,
+      "epoch": 4,
+      "val/loss": 1.9236170059996225,
+      "val/weighted_f1": 0.3833723784618126,
+      "val/macro_f1": 0.349791960678244
+    },
+    {
+      "train/loss": 1.1741964744119082,
+      "train/weighted_f1": 0.4147320115412426,
+      "epoch": 5,
+      "val/loss": 1.9184207759919714,
+      "val/weighted_f1": 0.36674047807619675,
+      "val/macro_f1": 0.3348301248228227
+    },
+    {
+      "train/loss": 0.9611262669282801,
+      "train/weighted_f1": 0.49415215982651933,
+      "epoch": 6,
+      "val/loss": 1.6772575443559656,
+      "val/weighted_f1": 0.522743443043602,
+      "val/macro_f1": 0.47119115144639817
+    },
+    {
+      "train/loss": 0.7836780458338121,
+      "train/weighted_f1": 0.6453394327422333,
+      "epoch": 7,
+      "val/loss": 1.6816697719970035,
+      "val/weighted_f1": 0.5616874844746487,
+      "val/macro_f1": 0.5048755728421072
+    },
+    {
+      "train/loss": 0.7807581172269933,
+      "train/weighted_f1": 0.6850595808302867,
+      "epoch": 8,
+      "val/loss": 1.6316290409838567,
+      "val/weighted_f1": 0.5549074238387232,
+      "val/macro_f1": 0.4994591265485183
+    },
+    {
+      "train/loss": 0.7472910712747013,
+      "train/weighted_f1": 0.7353871676788112,
+      "epoch": 9,
+      "val/loss": 1.6169613541149703,
+      "val/weighted_f1": 0.5746671627210614,
+      "val/macro_f1": 0.5159971832881974
+    },
+    {
+      "train/loss": 0.6488213034237132,
+      "train/weighted_f1": 0.7745220721689839,
+      "epoch": 10,
+      "val/loss": 1.625383513221324,
+      "val/weighted_f1": 0.5786336585174506,
+      "val/macro_f1": 0.520011211071883
+    },
+    {
+      "train/loss": 0.565100352343391,
+      "train/weighted_f1": 0.809165890727319,
+      "epoch": 11,
+      "val/loss": 1.589007264277974,
+      "val/weighted_f1": 0.5877740626197833,
+      "val/macro_f1": 0.5280112622285741
+    },
+    {
+      "train/loss": 0.6683383470423081,
+      "train/weighted_f1": 0.8024638088987858,
+      "epoch": 12,
+      "val/loss": 1.5882704173280893,
+      "val/weighted_f1": 0.5857517086128449,
+      "val/macro_f1": 0.5271199327620028
+    },
+    {
+      "train/loss": 0.6304440891041475,
+      "train/weighted_f1": 0.8070331747451055,
+      "epoch": 13,
+      "val/loss": 1.5896549088055971,
+      "val/weighted_f1": 0.569955147316022,
+      "val/macro_f1": 0.5122969915895608
+    },
+    {
+      "train/loss": 0.6612014748068417,
+      "train/weighted_f1": 0.7854275622363146,
+      "epoch": 14,
+      "val/loss": 1.599430765610575,
+      "val/weighted_f1": 0.5598871421224833,
+      "val/macro_f1": 0.5032197067971506
+    },
+    {
+      "train/loss": 0.6863608551025391,
+      "train/weighted_f1": 0.8157909987165386,
+      "epoch": 15,
+      "val/loss": 1.5915053705048692,
+      "val/weighted_f1": 0.561680527201883,
+      "val/macro_f1": 0.5048460165998055
+    }
+  ],
+  "test": {
+    "test/loss": 1.4632994040765397,
+    "test/weighted_f1": 0.6854070347738719,
+    "test/macro_f1": 0.6156146075249241,
+    "epoch": 11
+  },
+  "cfg": {
+    "data_dir": "../../data",
+    "batch_size": 32,
+    "freeze_epochs": 5,
+    "max_epochs": 15,
+    "head_lr": 0.001,
+    "backbone_lr": 0.0001,
+    "weight_decay": 0.0001,
+    "patience": 7,
+    "dropout": 0.3,
+    "num_workers": 4,
+    "checkpoint_dir": "checkpoints",
+    "seed": 42
+  }
+}

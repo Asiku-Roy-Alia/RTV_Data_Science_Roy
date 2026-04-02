@@ -1,0 +1,29 @@
+{
+  "total": 1216,
+  "n_classes": 9,
+  "imb_ratio": 9.375,
+  "n_corrupt": 0,
+  "n_duplicates": 0,
+  "class_counts": {
+    "compost": 150,
+    "goat-sheep-pen": 150,
+    "guinea-pig-shelter": 16,
+    "liquid-organic": 150,
+    "organic": 150,
+    "pigsty": 150,
+    "poultry-house": 150,
+    "tippytap": 150,
+    "vsla": 150
+  },
+  "class_weights": {
+    "compost": 0.9007407407407407,
+    "goat-sheep-pen": 0.9007407407407407,
+    "guinea-pig-shelter": 8.444444444444445,
+    "liquid-organic": 0.9007407407407407,
+    "organic": 0.9007407407407407,
+    "pigsty": 0.9007407407407407,
+    "poultry-house": 0.9007407407407407,
+    "tippytap": 0.9007407407407407,
+    "vsla": 0.9007407407407407
+  }
+}

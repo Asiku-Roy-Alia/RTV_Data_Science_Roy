@@ -1,0 +1,268 @@
+{
+  "checkpoint": "checkpoints/best_model.pth",
+  "best_epoch": 11,
+  "val_f1_at_ckpt": 0.5878,
+  "test": {
+    "accuracy": 0.6721,
+    "weighted_f1": 0.6854,
+    "macro_f1": 0.6156,
+    "weighted_precision": 0.7054,
+    "weighted_recall": 0.6721
+  },
+  "per_class": {
+    "compost": {
+      "support": 22,
+      "f1": 0.9091,
+      "precision": 0.9091,
+      "recall": 0.9091
+    },
+    "goat-sheep-pen": {
+      "support": 22,
+      "f1": 0.4783,
+      "precision": 0.4583,
+      "recall": 0.5
+    },
+    "guinea-pig-shelter": {
+      "support": 2,
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    "liquid-organic": {
+      "support": 23,
+      "f1": 0.5306,
+      "precision": 0.5,
+      "recall": 0.5652
+    },
+    "organic": {
+      "support": 23,
+      "f1": 0.5306,
+      "precision": 0.5,
+      "recall": 0.5652
+    },
+    "pigsty": {
+      "support": 23,
+      "f1": 0.6341,
+      "precision": 0.7222,
+      "recall": 0.5652
+    },
+    "poultry-house": {
+      "support": 22,
+      "f1": 0.6154,
+      "precision": 0.7059,
+      "recall": 0.5455
+    },
+    "tippytap": {
+      "support": 23,
+      "f1": 0.9091,
+      "precision": 0.9524,
+      "recall": 0.8696
+    },
+    "vsla": {
+      "support": 23,
+      "f1": 0.9333,
+      "precision": 0.9545,
+      "recall": 0.913
+    }
+  },
+  "confusion_matrix": [
+    [
+      20,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      11,
+      0,
+      0,
+      2,
+      3,
+      5,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      13,
+      9,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      10,
+      13,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      7,
+      2,
+      0,
+      0,
+      13,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      6,
+      2,
+      0,
+      0,
+      1,
+      12,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      20,
+      0
+    ],
+    [
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      21
+    ]
+  ],
+  "class_names": [
+    "compost",
+    "goat-sheep-pen",
+    "guinea-pig-shelter",
+    "liquid-organic",
+    "organic",
+    "pigsty",
+    "poultry-house",
+    "tippytap",
+    "vsla"
+  ],
+  "top_misclassifications": {
+    "compost": [
+      [
+        "organic",
+        2
+      ]
+    ],
+    "goat-sheep-pen": [
+      [
+        "poultry-house",
+        5
+      ],
+      [
+        "pigsty",
+        3
+      ],
+      [
+        "organic",
+        2
+      ]
+    ],
+    "guinea-pig-shelter": [
+      [
+        "vsla",
+        1
+      ],
+      [
+        "pigsty",
+        1
+      ]
+    ],
+    "liquid-organic": [
+      [
+        "organic",
+        9
+      ],
+      [
+        "guinea-pig-shelter",
+        1
+      ]
+    ],
+    "organic": [
+      [
+        "liquid-organic",
+        10
+      ]
+    ],
+    "pigsty": [
+      [
+        "goat-sheep-pen",
+        7
+      ],
+      [
+        "guinea-pig-shelter",
+        2
+      ],
+      [
+        "compost",
+        1
+      ]
+    ],
+    "poultry-house": [
+      [
+        "goat-sheep-pen",
+        6
+      ],
+      [
+        "guinea-pig-shelter",
+        2
+      ],
+      [
+        "compost",
+        1
+      ]
+    ],
+    "tippytap": [
+      [
+        "liquid-organic",
+        3
+      ]
+    ],
+    "vsla": [
+      [
+        "guinea-pig-shelter",
+        2
+      ]
+    ]
+  }
+}
