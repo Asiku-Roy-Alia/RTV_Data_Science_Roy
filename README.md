@@ -3,7 +3,7 @@
 **Candidate:** Roy Alia Asiku  
 **Assessment:** Data Scientist Technical Assessment | Raising The Village  
 **Date:** 2 April 2026  
-**Repository:** [github.com/AsikuRoy-Alia/RTV_Data_Science_Roy](https://github.com/AsikuRoy-Alia/RTV_Data_Science_Roy)
+**Repository:** [github.com/AsikuRoy-Alia/RTV_Data_Science_Roy](https://github.com/Asiku-Roy-Alia/RTV_Data_Science_Roy)
 
 ---
 
